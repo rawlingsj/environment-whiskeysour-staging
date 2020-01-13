@@ -22,3 +22,10 @@ jenkins:
   Servers:
     Global: {}
 prow: {}
+
+cars-rest-api:
+  env:
+    MONGODB_USERNAME: vault:mongodb:mongodb-username
+    MONGODB_PASSWORD: vault:mongodb:mongodb-password
+    MONGODB_DATABASE: cars-rest-api
+    MONGODB_ROOT_PASSWORD: vault:mongodb:mongodb-root-password
