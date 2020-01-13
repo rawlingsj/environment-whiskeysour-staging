@@ -17,7 +17,6 @@ expose:
     exposer: Ingress
     http: "true"
     tlsacme: "false"
-    urltemplate: '{{.Service}}-{{.Namespace}}.{{.Domain}}'
 jenkins:
   Servers:
     Global: {}
